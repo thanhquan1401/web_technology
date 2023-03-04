@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task17b</title>
+</head>
+<body>
+    <div style="width:50%;margin:auto;border:1px solid black;padding:10px;">
+        <form>
+            <label for="browser">Browser:</label>
+            <select name="browser" id="browser">
+                <option value="Chrome">Chrome</option>
+                <option value="Firefox">Firefox</option>
+                <option value="Safari">Safari</option>
+                <option value="Edge">Edge</option>
+                <option value="Opera">Opera</option>
+            </select>
+            <br><br>
+            <label for="username">Username:</label>
+            <input type="text" name="username" id="username" required>
+            <br><br>
+            <label for="password">Encryption:</label>
+            <input type="password" name="password" id="password" required>
+            <br><br>
+            <label for="range_slider"></label>
+            <input type="range" name="range_slider" id="range_slider" min="0" max="50" oninput="range_slider_value.value = range_slider.value">
+            <output name="range_slider_value" for="range_slider">0</output>
+            <br><br>
+            <label for="birthday_date">Birthday:</label>
+            <input type="date" name="birthday_date" id="birthday_date" required>
+            <br><br>
+            <label for="color">Select your favourite color:</label>
+            <input type="color" name="color" id="color">
+            <br><br>
+            <label for="birthday_month_year">Birthday (Month and Year):</label>
+            <input type="month" name="birthday_month_year" id="birthday_month_year" required>
+            <br><br>
+            <label for="week_select">Select a week:</label>
+            <input type="week" name="week_select" id="week_select" required>
+            <br><br>
+            <label for="time_select">Select time:</label>
+            <input type="time" name="time_select" id="time_select" required>
+            <br><br>
+            <label for="datetime_select">Birthday (Date and Time):</label>
+            <input type="datetime-local" name="datetime_select" id="datetime_select" required>
+            <br><br>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required>
+            <br><br>
+            <label for="google_search">Search Google:</label>
+            <input type="search" name="google_search" id="google_search" required>
+            <br><br>
+            <label for="telephone">Telephone:</label>
+            <input type="tel" name="telephone" id="telephone" required>
+            <br><br>
+            <label for="homepage">Add your homepage:</label>
+            <input type="url" name="homepage" id="homepage" required>
+            <br><br>
+            <input type="submit" value="Submit">
+        </form>
+        <h4 >Note: the datalist tag is not supported in Safari of IE9 ( and ealier )</h4>
+    </div>
+</body>
+</html>
