@@ -4,9 +4,89 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>task16
+    </title>
 </head>
 <body>
-    
+    <!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Travel Reservation Form</title>
+</head>
+
+<body>
+  <h2 style="text-align:center;">Travel Reservation Form</h2>
+  <h4 style="text-align:center;"><em>denotes mandatory</em></h4>
+
+  <form id="reservation-form">
+
+    <div>
+      <label for="full-name">Full name:</label><br>
+      <input type="text" id="full-name" name="full-name" required>
+    </div>
+
+    <div>
+      <label for="email">Email address:</label><br>
+      <input type="email" id="email" name="email" required>
+    </div>
+
+    <div>
+      <label for="tour-package">Select Tour Package:</label>
+      <br><select id="tour-package" name="tour-package" required>
+        <option value="">--Please choose an option--</option>
+        <option value="Package A">Package A</option>
+        <option value="Package B">Package B</option>
+        <option value="Package C">Package C</option>
+      </select>
+    </div>
+
+    <div>
+      <label for="arrival-date">Arrival date:</label>
+      <br><input type="date" id="arrival-date" name="arrival-date" required>
+    </div>
+
+    <div>
+      <label for="num-persons">Number of persons:</label>
+      <br><input type="number" id="num-persons" name="num-persons" required>
+    </div>
+
+    <div>
+      <label>What would you want to avail?</label>
+      <br>
+      <input type="checkbox" id="boarding" name="options[]" value="boarding">
+      <label for="boarding">Boarding</label>
+      <br>
+      <input type="checkbox" id="fooding" name="options[]" value="fooding">
+      <label for="fooding">Fooding</label>
+      <br>
+      <input type="checkbox" id="sightseeing" name="options[]" value="sightseeing">
+      <label for="sightseeing">Sight seeing</label>
+    </div>
+
+    <div>
+      <label for="discount-code">Discount Coupon code:</label><br>
+      <input type="text" id="discount-code" name="discount-code">
+    </div>
+
+    <div>
+      <label for="terms-and-conditions">Terms and conditions:</label>
+      <input type="radio" id="agree" name="terms-and-conditions" value="1" required>
+      <label for="agree">I agree</label>
+      <input type="radio" id="disagree" name="terms-and-conditions" value="0">
+      <label for="disagree">I disagree</label>
+    </div>
+
+    <div style="text-align:center;">
+      <input type="submit" value="Complete Reservation">
+    </div>
+
+  </form>
+
+</body>
+
+</html>
+
 </body>
 </html>
