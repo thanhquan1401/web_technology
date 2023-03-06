@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Trang web mẫu</title>
+   <style>
+      /* Một số định dạng cho trang web */
+      body {
+         font-family: Arial, sans-serif;
+         background-color: #f5f5f5;
+         margin: 0;
+      }
+
+      .container {
+         max-width: 1200px;
+         margin: 0 auto;
+         padding: 20px;
+      }
+
+      header {
+         background-color: navy;
+         color: white;
+         padding: 10px;
+      }
+
+      nav {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         margin-top: 20px;
+         margin-bottom: 20px;
+         padding: 10px;
+         background-color: #333;
+         color: white;
+      }
+
+      nav ul {
+         list-style-type: none;
+         margin: 0;
+         padding: 0;
+         display: flex;
+      }
+
+      nav li {
+         margin-left: 20px;
+      }
+
+      nav a {
+         color: white;
+         text-decoration: none;
+      }
+
+      nav a:hover {
+         text-decoration: underline;
+      }
+
+      main {
+         display: flex;
+      }
+
+      article {
+         width: 70%;
+         padding-right: 20px;
+      }
+
+      aside {
+         width: 30%;
+         background-color: #eee;
+         padding: 20px;
+      }
+
+      footer {
+         background-color: #222;
+         color: white;
+         padding: 10px;
+         text-align: center;
+      }
+   </style>
+</head>
+<body>
+   <header>
+      <div class="container">
+         <h1>Trang web mẫu</h1>
+         <p>Chào mừng đến với trang web của chúng tôi!</p>
+      </div>
+   </header>
+
+   <nav>
+      <div class="container">
+         <ul>
+            <li><a href="#">Trang chủ</a></li>
+            <li><a href="#">Giới thiệu</a></li>
+            <li><a href="#">Liên hệ</a></li>
+            <li><a href="#">Đăng nhập</a></li>
+         </ul>
+         <form action="#" method="get">
+            <input type="text" name="search" id="search" placeholder="Tìm kiếm...">
+         </form>
+      </div>
+   </nav>
+
+   <main>
+      <div class="container">
+         <article>
+            <h2>Tiêu đề bài viết 1</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ac augue nunc. Phasellus eget feugiat eros. Fusce in tellus libero. Pellentesque id mi lacus.</p>
+            <p>Sed a metus quis sapien cursus iaculis. Sed consectetur orci vel mauris tristique, et malesuada eros sagittis. Duis vulputate purus vitae justo tempor, a euismod quam fringilla.</p>
+            <p>Nam vel lobortis arcu. Nam varius lobortis ante maximus efficitur. Nulla facilisi. Cras volutpat erat nec ligula suscipit scelerisque.</p>
+         </article>
+
+         <aside>
+            <h3>Tin mới</h3>
+            <ul>
+               <li><a href="#">Tin tức 1</a></li>
+               <li><a href="#">Sự kiện mới</a></li>
+               <li><a href="#">Thông báo</a></li>
+            </ul>
+         </aside>
+      </div>
+   </main>
+
+   <footer>
+      <div class="container">
+         <p>&copy; Trang web mẫu | 2021</p>
+      </div>
+   </footer>
+</body>
+</html>
