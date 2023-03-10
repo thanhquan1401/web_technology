@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Product_Tuan4</title>
+  <title>Tuan4 </title>
 
   <style>
     #header {
@@ -47,7 +47,6 @@
         color: #333;
     }
 
-    
 
     #cart span {
       font-size: 14px;
@@ -75,7 +74,25 @@
     #img {
         margin-top: 20px;
       }
+    #promotions {
+      margin-left: 150px;
+      }
+      .footer {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+      }
       
+      .footer > div {
+        flex: 1 1 30%;
+        padding-right: 20px;
+      }
+    
+      .footer ul li {
+        list-style: none;
+        margin-bottom: 10px;
+      }
+    
   </style>
 </head>
 
@@ -83,14 +100,14 @@
   <div id="wrapper">
     <div id="menu-container">
       <div id="left">
-        <div>Home</div>
-        <div>Offers</div>
-        <div>Our story</div>
-        <div>Blog</div>
+        <div><a href="#">Home</a></div>
+        <div><a href="#">Offer</a></div>
+        <div><a href="#">Our story</a></div>
+        <div><a href="#">Blog</a></div>
       </div>
 
       <div id="logo">
-        <center><img src="logo.png" alt="Logo"></center>
+        <img src="logo.png" alt="Logo">
       </div>
 
       <div class="header">
@@ -108,6 +125,44 @@
         
       </div>
     </div>
+    <header>
+      <div class="promotions">
+        <h1>Promotions</h1>
+      </div>
+    </header>
+    <div>
+      <img src="image 1 (1).png" alt="">
+    </div>
+    
   </div>
+  <div class="footer">
+    <div class="titleA">
+      <strong>About</strong>
+    </div>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Shop</a></li>
+      <li><a href="#">Our story</a></li>
+      <li><a href="#">Blogs</a></li>
+    </ul>
+    <div class="titleH">
+      <strong>Help</strong>
+    </div>
+    <ul>
+      <li><a href="#">Shopping & Return</a></li>
+      <li><a href="#">Track Order</a></li>
+      <li><a href="#">FAQs</a></li>
+    </ul>
+    <div class="titleC">
+      <strong>Contact</strong>
+    </div>
+    <ul>
+      <li>Phone :</li>
+      <li>(+1) 123 456 7893</li>
+      <li>Email:</li>
+      <li>name@gmail.com</li>
+    </ul>
+  </div>
+  
 </body>
 </html>
