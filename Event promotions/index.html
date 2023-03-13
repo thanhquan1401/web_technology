@@ -1,168 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tuan4 </title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event_Week4</title>
 
-  <style>
-    #header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      height: 50px;
-      background-color: #eee;
-    }
-    #cart {
-        display: flex;
-        align-items: center;
-        margin-left: 10px;
-    }
-    #search {
-        display: flex;
-        align-items: center;
-      }
+    <style>
       
-    
-
-    #search input[type="text"] {
-        padding: 5px;
-        border: none;
-        border-radius: 2px;
+        #menu-container {
+            display: flex;
+            justify-content: space-around;
+        }
         
-      }
-
-    #search button[type="submit"] {
-        padding: 5px 10px;
-        background-color: #333;
-        color: #fff;
-        border: none;
-        border-radius: 2px;
-        cursor: pointer;
-      }
-
-    #cart a {
-        text-decoration: none;
-        color: #333;
-    }
-
-
-    #cart span {
-      font-size: 14px;
-      font-weight: bold;
-    }
-
-    #menu-container {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      width: 100%;
-    }
-
-    #left {
-      display: flex;
-      justify-content: space-around;
-      width: 30%;
-    }
-
-    #wrapper {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    #img {
-        margin-top: 20px;
-      }
-    #promotions {
-      margin-left: 150px;
-      }
-      .footer {
-        display: flex;
-        justify-content: flex-start;
-        flex-wrap: wrap;
-      }
-      
-      .footer > div {
-        flex: 1 1 30%;
-        padding-right: 20px;
-      }
-    
-      .footer ul li {
-        list-style: none;
-        margin-bottom: 10px;
-      }
-    
-  </style>
+        #left {
+            display: flex;
+            justify-content: space-around;
+            width: 30%;
+            align-items: center;
+        }
+        
+        #logo {
+            margin: 15px;
+        }
+        
+        #right {
+            display: flex;
+            justify-content: space-around;
+            width: 30%;
+            align-items: center;
+        }
+        
+        #Title {
+            display: flex;
+            justify-content: center;
+            font-size: 30px;
+            opacity: 0.8;
+        }
+        
+        #Banner {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        #Banner_1 {
+            display: flex;
+            height: 105px;
+            width: 50%;
+        }
+      </style>
 </head>
-
 <body>
-  <div id="wrapper">
-    <div id="menu-container">
-      <div id="left">
-        <div><a href="#">Home</a></div>
-        <div><a href="#">Offer</a></div>
-        <div><a href="#">Our story</a></div>
-        <div><a href="#">Blog</a></div>
-      </div>
+    <div id="Warpper">
 
-      <div id="logo">
-        <img src="logo.png" alt="Logo">
-      </div>
-
-      <div class="header">
-        <div id="cart">
-          </div>
-        <div id="search">
-          <form action="#">
-            <input type="text" placeholder="Search...">
-            <button type="submit">Go</button>
-            <a id="img">
-                <img src="Button 1 (1).png" alt=" shopping cart">
-              </a>
-          </form>
+        <div id="menu-container">
+            <div id="left">
+                <div>Shop</div>
+                <div>Offers</div>
+                <div>Our story</div>
+                <div>Blog</div>
+            </div>
+            <div id="logo">
+                <img src="Image 1.png" alt="Logo">
+            </div>
+            <div id="right">
+                <div>
+                    <input type="text" name="Search" id="Search1" placeholder="Search product...">
+                </div>
+                <div>
+                    <img src="Button 1 (1).png" alt="">
+                </div>
+                <div>
+                    <img src="Avatar 1.png" alt="Avatar">
+                </div>
+            </div>
         </div>
-        
-      </div>
-    </div>
-    <header>
-      <div class="promotions">
-        <h1>Promotions</h1>
-      </div>
-    </header>
-    <div>
-      <img src="image 1 (1).png" alt="">
-    </div>
+
+        <div id="Title">
+            <div>
+                <h1> Promotions </h1>
+            </div>
+        </div>
+
+        <div id="Banner">
+            <div id="Banner_1">
+                <div id="Banner_1.1">
+                    <img src="Image 1 (1).png" alt="image1">
+                </div>
+                <div id="Banner_1.2" style="margin-left: 70px;">
+
+                    <h1>Promotion title</h1>
+                    <p style="margin-right: 50px;">Et ipsum irure amet cupidatat mollit exercitation consequat duis aliquip. Reprehenderit Lorem veniam pariatur esse pariatur in aute tempor au</p>
+                    <p style="opacity: 0.5;">*Velit deserunt elit proident velit anim adipisicing</p>
+                    <input type="button">
+
+                </div>
+            </div>
     
-  </div>
-  <div class="footer">
-    <div class="titleA">
-      <strong>About</strong>
     </div>
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Shop</a></li>
-      <li><a href="#">Our story</a></li>
-      <li><a href="#">Blogs</a></li>
-    </ul>
-    <div class="titleH">
-      <strong>Help</strong>
-    </div>
-    <ul>
-      <li><a href="#">Shopping & Return</a></li>
-      <li><a href="#">Track Order</a></li>
-      <li><a href="#">FAQs</a></li>
-    </ul>
-    <div class="titleC">
-      <strong>Contact</strong>
-    </div>
-    <ul>
-      <li>Phone :</li>
-      <li>(+1) 123 456 7893</li>
-      <li>Email:</li>
-      <li>name@gmail.com</li>
-    </ul>
-  </div>
-  
 </body>
+
 </html>
