@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Event</title>
+    <title>Week4</title>
 
     <style>
       
@@ -47,8 +47,88 @@
         
         #Banner_1 {
             display: flex;
-            height: 105px;
-            width: 50%;
+            height: 305px;
+            width: 80%;
+        
+        }
+        
+        #Banner_2 {
+            display: flex;
+            margin-top: 40px;
+            height: 305px;
+            width: 80%;
+        }
+       
+        #Banner_3 {
+            position: absolute;
+            top: 0;
+            right: 0;
+            color: white;
+          }
+          
+
+        #footer {
+            width: 100%;
+            height: 350px;
+            background-color: #22232f;
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+        }
+        #footer_1 {
+           display: flex;
+           width: 50%;
+           margin-top: 16px;
+           margin-left: 100px;
+        }
+        #footer_1_A {
+            text-decoration: none;
+            list-style: none;
+        }
+        #footer_1_A_a {
+            font-size: 20px;
+            font-weight: bold;
+            color: #fff;
+             margin-top: 50px;
+        }
+        #footer_1_A_a_1 {
+            margin: 20px 0;
+            font-size: 10px;
+            font-weight: 400;
+            color: #fff;
+            position: relative;
+        }
+        #Select_Language {
+            width: 99px; 
+            height: 28px;
+            border: 1px solid #fff;
+            border-radius: 4px;
+            outline: none;
+            background-color: #0b0c12;
+        }
+        #Email {
+            width: 270px;
+            height: 40px;
+            border-radius: 10px;
+            padding: 0 50px;
+            font-size: 16px;
+            outline: none;
+            background-color: #22232f;
+            border: 1px solid #fff;
+            color: #fff;
+        }
+        #Button {
+            position: absolute;
+            height: 42px;
+            width: 100px;
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 10px ;
+            border-top-right-radius: 10px;
+            right: -30px;
+            color: #fff;
+            padding: 0;
+            background-color: #589d70;
         }
       </style>
 </head>
@@ -63,17 +143,17 @@
                 <div>Blog</div>
             </div>
             <div id="logo">
-                <img src="Image 1.png" alt="Logo">
+                <img src="Image\logo.png" alt="Logo">
             </div>
             <div id="right">
                 <div>
                     <input type="text" name="Search" id="Search1" placeholder="Search product...">
                 </div>
                 <div>
-                    <img src="Button 1 (1).png" alt="">
+                    <img src="Image\Button 1 (1).png" alt="">
                 </div>
                 <div>
-                    <img src="Avatar 1.png" alt="Avatar">
+                    <img src="Image\Avatar 1.png" alt="Avatar">
                 </div>
             </div>
         </div>
@@ -87,18 +167,106 @@
         <div id="Banner">
             <div id="Banner_1">
                 <div id="Banner_1.1">
-                    <img src="Image 1 (1).png" alt="image1">
+                    <img src="Image\Image 1 (1).png" alt="image1">
                 </div>
                 <div id="Banner_1.2" style="margin-left: 70px;">
 
                     <h1>Promotion title</h1>
-                    <p style="margin-right: 50px;">Et ipsum irure amet cupidatat mollit exercitation consequat duis aliquip. Reprehenderit Lorem veniam pariatur esse pariatur in aute tempor au</p>
+                    <p style="margin-right: 60px;">Et ipsum irure amet cupidatat mollit exercitation consequat duis aliquip. Reprehenderit Lorem veniam pariatur esse pariatur in aute tempor au</p>
                     <p style="opacity: 0.5;">*Velit deserunt elit proident velit anim adipisicing</p>
-                    <input type="button">
+                    <input type="button"value="Shop Now" style="background-color: #008868; margin-top: 30px; width: 150px; height: 40px; border-radius: 5px;">
 
                 </div>
             </div>
-    
+            <div id="Banner_2">
+                <div id="Banner_2.1" style="margin-left: 70px; margin-right: 100px;">
+                    <h1>Promotion title</h1>
+                    <p>Et ipsum irure amet cupidatat mollit exercitation consequat duis aliquip. Reprehenderit Lorem veniam pariatur esse pariatur in aute tempor au</p>
+                    <p style="opacity: 0.5;">*Velit deserunt elit proident velit anim adipisicing</p>
+                    <input type="button" value="Shop Now" style="background-color: #008868; margin-top: 30px; width: 150px; height: 40px; border-radius: 5px;">
+                </div>
+                <div id="Banner_2.2">
+                    <img src="Image/Image 1 (2).png" alt="image2">
+                </div>
+            </div>
+            <!-- <div id="Banner_3">
+                <div id="Banner_3.1">
+                    <img src="Image/Image 1 (3).png" alt="image3" style="margin-left: px; width: 1130px;">
+                    <h1> Gift for your skin </h1>
+                    <p style="opacity: 0.5;">Enim officia magna ut esse aliquip irure<br>consectetur dolor dolor commodo et . Cupid</p>
+                    <input type="button" value="Shop Now" style="background-color: #008868; margin-top: 30px; width: 150px; height: 40px; border-radius: 5px;">
+                </div>
+                
+            </div> -->
+            <div style="position:relative;">
+                <img src="Image/Image 1 (3).png" alt="image3">
+                <div class="Banner_3">
+                  <h1>Gift for your skin</h1>
+                  <p>Enim officia magna ut esse aliquip irure<br>consectetur dolor dolor commodo et.Cupid</p>
+                  <input type="button" value="Shop Now" style="background-color: #008868; margin-top: 30px; width: 150px; height: 40px; border-radius: 5px;">
+                </div>
+              </div>
+        </div>
+        <footer id="footer">
+            <div id="footer_1">
+                <ul id="footer_1_A">
+                    <li id="footer_1_A_a">About</li> 
+                    <li id="footer_1_A_a_1">Home</li>
+                    <li id="footer_1_A_a_1">Shop</li>
+                    <li id="footer_1_A_a_1">Our Story</li>
+                    <li id="footer_1_A_a_1">Blogs</li>
+                    <li id="footer_1_A_a_1">
+                         <Select id="Select_Language"> 
+                            <option value="English" style="color: white;">English</option>
+                            <option value="Vietnamese">Vietnamese</option>
+                         </Select>
+                    </li>
+                </ul>
+                <ul  id="footer_1_A">
+                    <li id="footer_1_A_a">Help</li>
+                    <li id="footer_1_A_a_1">Shipping & Returns</li>
+                    <li id="footer_1_A_a_1">Track Order</li>
+                    <li id="footer_1_A_a_1">FAQs</li>
+               
+                </ul>
+
+                <ul id="footer_1_A">
+                    <li id="footer_1_A_a">Contact</li>
+                    <li id="footer_1_A_a_1">Phone:</li>
+                    <li id="footer_1_A_a_1">(+1) 123 456 789</li>
+                    <li id="footer_1_A_a_1">Email</li>
+                    <li id="footer_1_A_a_1">name@gmail.com</li>
+                </ul>
+            </div>
+
+            <div id="footer_1">
+                <ul id="footer_1_A">
+                    <li  id="footer_1_A_a">Receive new promotions</li>
+                    <li id="footer_1_A_a_1">Duis ea tempor commodo amet reprehende</li>
+                    <li id="footer_1_A_a_1">
+                        <i style="position: absolute;top: 11px;left: 25px;"></i>
+                        <input type="email" id="Email" placeholder="In put Your Email">
+                        <button id="Button">Subscibe</button>
+                    </li>    
+                    <li>
+                        <ul style="margin-left: -40px; margin-top: 30px;">
+                            <img src="Image/Twitter 1.png" alt="Logo Twitter">
+                            <img src="Image/Facebook 1.png" alt="Logo Facebook">
+                            <img src="Image/LinkedIn 1.png" alt="Logo LinkedIn">
+                            <img src="Image/YouTube 1.png" alt="Logo YouTube">
+                        </ul>
+                    </li>
+                    <li id="footer_1_A_a_1" >
+                        <ul style="display: flex;list-style: none;">
+                            <li style="margin: 0 12px;font-size: 12px;opacity: 0.8;">2022 Brand</li>
+                            <li style="margin: 0 12px;font-size: 12px;opacity: 0.8;">Privacy</li>
+                            <li style="margin: 0 12px;font-size: 12px;opacity: 0.8;">Terms</li>
+                            <li style="margin: 0 12px;font-size: 12px;opacity: 0.8;">Sitemap</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </footer>
     </div>
 </body>
 
