@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>week5</title>
     <style>
         #wrapper {
             display: flex;
@@ -25,21 +25,42 @@
             background-color: rgb(255, 255, 255);
         }
         
-        #leftofcenter p:not(:last-child) {
-            margin-bottom: 5px;
+
+        #leftofcenter {
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0 10px;
+        }
+        .circle1 {
+            display: flex;
+            align-items: center;
+            border-radius: 8px; /* Change this to your desired value */
+            background-color: rgb(205, 40, 90);
+            width: 97px;
+            height: 30px;/* Change this to your desired color */
+        }
+        
+        .circle1 img {
+            width: 20px;
+        }
+        .circle2 {
+            display: flex;
             align-items: center;
         }
-        #leftofcenter{
-            display: flex;
+        
+        .circle2 img {
+            width: 20px;
         }
-        .leftofcenter img,
-        .leftofcenter p {
-            margin-left: 10px;
+        .circle3 img {
+            width: 20px;
         }
-        .leftofcenter p:not(:last-child) {
-            margin-bottom: 10px;
+        #leftofcenter p,
+        #leftofcenter img {
+            width: 20px;
+        }
+        #leftofcenter > * {
+            margin: 0 8.5px;
         }
         #right {
             width: 440px;
@@ -103,21 +124,32 @@
                 <div>
                     <h1>Meeting title</h1>
                 </div>
-                <div id="leftofcenter" style="padding: 10px;">
-                    <img src="Image/user.png" width="20" alt="user" style="display:inline-block;">
-                    <p>Internal</p>
-                    <img src="Image/calender_small.png" width="20" alt="calender_small" style="display:inline-block;">
-                    <p>Sep 02, 2022</p>
-                    <p>08:00 - 09:00 AM</p>
+                <div id="leftofcenter" style="margin: 10px;">
+                    <div class="circle1">
+                        <img src="Image/user.png" alt="user">
+                        <p>Internal</p>
+                    </div>
+                    <div class="circle2">
+                        <img src="Image/calender_small.png" alt="calender_small">
+                        <p>Sep 02, 2022</p>
+                    </div>
+                    <div class="circle3">
+                        <p>08:00 - 09:00 AM</p>
+                    </div>
+                    
                 </div>
                 <div>
                     <img src="Image/img_big.png" alt="Image1">
+                </div>
+                <div style="display: flex;">
+                    <img src="Image/img2.png">
+                    <img src="Image/img1.png">
+                    <img src="Image/img.png">
                 </div>
             </div>
             <div id="right">
                 <h1>Participants</h1>
             </div>
-
         </div>
 
 
