@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #wrapper {
+            display: flex;
+            justify-content: center;
+            
+        }
+        
+        #container {
+            display: flex;
+            justify-content: space-between;
+            height: 788px;
+            width: 1500px;
+        }
+        
+        #center {
+            width: 910px;
+            background-color: rgb(255, 255, 255);
+        }
+        
+        #leftofcenter p:not(:last-child) {
+            margin-bottom: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #leftofcenter{
+            display: flex;
+        }
+        .leftofcenter img,
+        .leftofcenter p {
+            margin-left: 10px;
+        }
+        .leftofcenter p:not(:last-child) {
+            margin-bottom: 10px;
+        }
+        #right {
+            width: 440px;
+            background-color: rgb(255, 255, 255);
+        }
+        
+        #left {
+            width: 90px;
+            height: 870px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        
+        #left_above {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        #below {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .item {
+            width: 32px;
+            margin-top: 50px;
+        }
+        
+        #setting {
+            margin-top: 36px;
+        }
+      
+          
+    </style>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="container">
+            <div id="left">
+                <div id="left_above">
+                    <img class="item" src="Image/logo.png" alt="">
+                    <img class="item" src="Image/home.png" alt="">
+                    <img class="item" src="Image/cam.png" alt="">
+                    <img class="item" src="Image/chatting.png" alt="">
+                    <img class="item" src="Image/user.png" alt="">
+                </div>
+
+                <div id="below">
+                    <img src="Image/avatar.png" width="44" alt="avatar">
+                    <img id="setting" src="Image/setting.png" width="44" alt="setting">
+                </div>
+            </div>
+              
+            <div id="center">
+                <div>
+                    <h1>Meeting title</h1>
+                </div>
+                <div id="leftofcenter" style="padding: 10px;">
+                    <img src="Image/user.png" width="20" alt="user" style="display:inline-block;">
+                    <p>Internal</p>
+                    <img src="Image/calender_small.png" width="20" alt="calender_small" style="display:inline-block;">
+                    <p>Sep 02, 2022</p>
+                    <p>08:00 - 09:00 AM</p>
+                </div>
+                <div>
+                    <img src="Image/img_big.png" alt="Image1">
+                </div>
+            </div>
+            <div id="right">
+                <h1>Participants</h1>
+            </div>
+
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>
