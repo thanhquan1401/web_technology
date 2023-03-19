@@ -1,160 +1,431 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>week5</title>
-    <style>
-        wrapper {
-            display: flex;
-            justify-content: center;
-            
-        }
-        
-        #container {
-            display: flex;
-            justify-content: space-between;
-            height: 788px;
-            width: 1500px;
-        }
-        
-        #center {
-            width: 910px;
-            background-color: rgb(255, 255, 255);
-        }
-        
-
-        #leftofcenter {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin: 0 10px;
-        }
-        .circle1 {
-            display: flex;
-            align-items: center;
-            border-radius: 90px;
-            background-color: rgb(205, 40, 90);
-            width: 97px;
-            height: 33px;
-        }
-        
-        .circle1 img {
-            width: 20px;
-        }
-        .circle2 {
-            display: flex;
-            align-items: center;
-        }
-        
-        .circle2 img {
-            width: 20px;
-        }
-        .circle3 img {
-            width: 20px;
-        }
-        #leftofcenter p,
-        #leftofcenter img {
-            width: 20px;
-            display: flex;
-        }
-        #leftofcenter > * {
-            margin: 0 8.5px;
-        }
-        #right {
-            width: 440px;
-            background-color: rgb(255, 255, 255);
-        }
-        
-        #left {
-            width: 90px;
-            height: 870px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
-        
-        #left_above {
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        
-        #below {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-        
-        .item {
-            width: 32px;
-            margin-top: 50px;
-        }
-        
-        #setting {
-            margin-top: 36px;
-        }
-      
-          
-    </style>
+    <title>Tuần 5 15-3 NguyenvanThanhQuan</title>
+    <link rel="stylesheet" href="/CSS/Style.css">
 </head>
-
+<style>
+    .Wapper {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        gap: 20px;
+    }
+    
+    .menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        border-right: 1px solid rgb(211, 211, 211);
+        width: 85px;
+        height: 900px;
+        align-items: center;
+    }
+    
+    .tool {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        flex-grow: 1;
+        width: 600px;
+        margin-top: 20px;
+        gap: 20px;
+    }
+    
+    .user {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #itemtool {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 60px;
+        height: 60px;
+        align-items: center;
+        border-radius: 5px;
+    }
+    
+    .metting {
+        display: flex;
+        flex-direction: column;
+        width: 910px;
+        height: 900px;
+        align-items: center;
+        margin-top: 32px;
+    
+    }
+    
+    .metting_title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 115px;
+        width: 910px;
+        margin-top: 5px;
+    }
+    
+    #content {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 75px;
+        width: 910px;
+        gap: 10px;
+    }
+    
+    #clender {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 30px;
+        width: 110px;
+        gap: 10px;
+    }
+    
+    #time_line {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 30px;
+        width: 130px;
+        gap: 10px;
+    }
+    
+    #internal {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-left: 31px;
+        border-radius: 20px;
+        color: white;
+        background-color: rgb(252, 134, 134);
+        height: 30px;
+        width: 90px;
+        gap: 5px;
+    }
+    
+    #time {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: row;
+        height: 40px;
+        width: 910px;
+        align-items: center;
+        gap: 570px;
+    }
+    
+    #time h1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        text-align: left;
+        margin-left: 30px;
+    }
+    
+    #time p {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+        align-items: center;
+        color: red;
+        border: 1px solid red;
+        border-radius: 20px;
+        height: 40px;
+        width: 90px;
+    }
+    
+    .metting_main {
+        
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        height: 458px;
+        width: 830px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        gap: 600px;
+        margin-top: 20px;
+    }
+    
+    .metting_main p {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        color: white;
+        border-radius: 5px;
+        background-color: rgb(102, 103, 106, 255);
+        opacity: 70%;
+        width: 160px;
+        height: 40px;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+    
+    .meeting_main img {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        border-radius: 5px;
+        height: 40px;
+        width: 40px;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+    
+    .metting_cam {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 40px;
+    }
+    
+    .cam {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        gap: 30px;
+        border-radius: 10px;
+    }
+    
+    #cam_item {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 30px;
+        border-radius: 10px;
+        height: 160px;
+        width: 261px;
+    }
+    
+    #cam_item p {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        color: white;
+        border-radius: 5px;
+        background-color: rgb(102, 103, 106, 255);
+        opacity: 70%;
+        width: 120px;
+        height: 30px;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+    
+    #cam_item_mic {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        color: white;
+        border-radius: 10px;
+        background-color: rgb(102, 103, 106, 255);
+        border-radius: 2px;
+        opacity: 70%;
+        width: 30px;
+        height: 30px;
+        margin-top: 15px;
+        margin-left: 55px;
+    }
+    
+    .online {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: rgb(0, 255, 0);
+        margin: 0 5px;
+    }
+    
+    .dot_red {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: red;
+        margin: 0 5px;
+    }
+    
+    .cam_tool {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        margin: 20px;
+        gap: 20px;
+        height: 44px;
+        width: 44px;
+    }
+    
+    .cam_tool button {
+        background-color: red;
+        color: white;
+        font-size: 17px;
+        border: 0px;
+        border-radius: 5px;
+        height: 44px;
+        width: 125px;
+        align-items: center;
+    }
+    
+    .part {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border-left: 1px solid rgb(211, 211, 211);
+        width: 450px;
+        height: 900px;
+        align-items: center;
+      
+    }
+    #participants {
+        
+        width: 420px;
+        height: 330px;
+        display: flex;
+    }
+    
+    #participants_title {
+        display: flex;
+        justify-content: row;
+       
+    }
+    #title_left {
+       
+        width: 260px;
+        height: 330px;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    #title_h1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-left: 10px ;
+        
+    }
+    #title_h1_detail {
+        margin: 25px 0 0 0;
+    }
+    #title_h4 {
+        background-color: #fdf1f4;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        margin: 45px 0 0 10px;
+        border-radius:50%;
+        color: #e76685;
+    }
+    #title_right {
+       
+        width: 150px;
+        height: 330px;
+        display: flex;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    #right_h4 {
+        width: 70px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        margin: 15px 0 0 70px;
+        border: 1px solid #ee97ab;
+        color: #ea7691;
+        border-radius: 6%;
+    }
+    
+</style>
 <body>
-    <div id="wrapper">
-        <div id="container">
-            <div id="left">
-                <div id="left_above">
-                    <img class="item" src="Image/logo.png" alt="">
-                    <img class="item" src="Image/home.png" alt="">
-                    <img class="item" src="Image/cam.png" alt="">
-                    <img class="item" src="Image/chatting.png" alt="">
-                    <img class="item" src="Image/user.png" alt="">
-                </div>
-
-                <div id="below">
-                    <img src="Image/avatar.png" width="44" alt="avatar">
-                    <img id="setting" src="Image/setting.png" width="44" alt="setting">
-                </div>
+    <div class="Wapper">
+        <div class="menu">
+            <div class="tool">
+                <div><img src="/Image/logo.png" alt=""></div>
+                <div id="itemtool"><img src="/Image/home.png" alt=""></div>
+                <div id="itemtool"><img src="/Image/chatting.png" alt=""></div>
+                <div id="itemtool"><img src="/Image/calender.png" alt=""></div>
+                <div id="itemtool" style="background-color: rgb(244,196,196);"><img src="Image/cam.png" alt=""></div>
+                <div id="itemtool"><img src="/Image/user.png" alt=""></div>
             </div>
-              
-            <div id="center"  >
-                <div>
-                    <h1>Meeting title</h1>
-                </div>
-                <div id="leftofcenter" style="margin: 10px;display: flex;" >
-                    <div class="circle1">
-                        <img src="Image/user.png" alt="user">
-                        <p>Internal</p>
-                    </div>
-                    <div class="circle2">
-                        <img src="Image/calender_small.png" alt="calender_small">
-                        <p>Sep 02, 2022</p>
-                    </div>
-                    <div class="circle3">
-                        <p>08:00 - 09:00 AM</p>
-                    </div>
-                </div>
-                <div>
-                    <img src="Image/img_big.png" alt="Image1">
-                </div>
-                <div style="display: flex;">
-                    <img src="Image/img2.png">
-                    <img src="Image/img1.png">
-                    <img src="Image/img.png">
-                </div>
-            </div>
-            <div id="right">
-                <h1>Participants</h1>
+            <div class="user">
+                <div><img src="/Image/avatar.png" alt=""></div>
+                <div><img src="/Image/setting.png" alt=""></div>
             </div>
         </div>
-
-
-    </div>
-
+        <div class="metting">
+            <div class="metting_title">
+                <div id="time">
+                    <div>
+                        <h1>Meeting title</h1>
+                    </div>
+                    <div>
+                        <p><span class="dot_red"></span>12:00</p>
+                    </div>
+                </div>
+                <div id="content">
+                    <div id="internal">
+                       
+                        <p>Internal</p>
+                    </div>
+                    <div id="clender">
+                        <img src="/Image/calender_small.png" alt="">
+                        <p>Sep 02, 2022</p>
+                    </div>
+                    <div id="time_line">
+                        <p>|</p>
+                        <p>8:00 - 9:00 AM</p>
+                    </div>
+                </div>
+            </div>
+            <div class="metting_main" style="background-image: url(/Image/img_big.png);">
+                <div>
+                    <p><span class="online"></span> Benjamin Crawford</p>
+                </div>
+                <div><img src="/Image/mic_color.png" alt=""></div>
+            </div>
+            <div class="metting_cam">
+                <div class="cam">
+                    <div id="cam_item" style="background-image:url(/Image/img2.png);">
+                        <div>
+                            <p><span class="online"></span> Christian Scott</p>
+                        </div>
+                        <div id="cam_item_mic"><img src="/Image/mic_grey_color.png" alt=""></div>
+                    </div>
+                    <div id="cam_item" style="background-image:url(/Image/img1.png);">
+                        <div>
+                            <p><span class="online"></span> Deborah Chu</p>
+                        </div>
+                        <div id="cam_item_mic"><img src="/Image/mic_grey_color.png" alt=""></div>
+                    </div>
+                    <div id="cam_item" style="background-image:url(/Image/img.png);">
+                        <div>
+                            <p><span class="online"></span> Jordan Nieves</p>
+                        </div>
+                        <div id="cam_item_mic"><img src="/Image/mic_grey_color.png" alt=""></div>
+                    </div>
+                </div>
+                <div class="cam_tool">
+                    <div><img src="/Image/mic_grey_color.png" alt=""></div>
+                    <div><img src="/Image/cam_color.png" alt=""></div>
+                    <div><img src="/Image/speaker_grey_color.png" alt=""></div>
+                    <div><button>End meeting</button></div>
+                    <div><img src="/Image/Button 2179.png" alt=""></div>
+                    <div><img src="/Image/share.png" alt=""></div>
+                    <div><img src="/Image/BaCham.png" alt=""></div>
+                </div>
+            </div>
+        </div>
 </body>
 
 </html>
