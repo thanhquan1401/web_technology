@@ -345,7 +345,67 @@
         color: #ea7691;
         border-radius: 6%;
     }
+    #chat {
     
+        width: 420px;
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border: 1px solid #f1f2f4;
+    }
+    #chat_h1 {
+        height: 100px;
+        margin: 0 0 -40px 10px ;
+    }
+    #chat_user {
+        height: 100px;
+        display: flex;
+        flex-direction: row;
+        margin: 0 0 0 10px;
+    }
+    
+    #chat_user2 {
+        display: flex;
+        flex-direction: column;
+    }
+    #chat_user2s {
+         display: flex;
+        flex-direction: row;
+        margin-left: 10px;
+    }
+    #avatar_user_name {
+        margin:  8px 0 0 10px;
+    }
+    #time_text {
+        margin: -9px 0 0 9px;
+    }
+    #content_text2 {
+        background-color: #f7f9fa;
+        margin-left: 20px;
+    }
+    #chat_user1 {
+        height: 100px;
+        display: flex;
+        flex-direction: row;
+        margin: 0 0 0 10px;
+    }
+    #content_text3 {
+      margin-left: 20px;
+    }
+    #content_text4 {
+        background-color:#f8f9fa;
+        width: 280px;
+        height: 45px;
+        margin-left: 20px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: row;
+    }
+    #content_text4_detail {
+        display: flex;
+        flex-direction: row;
+    }
 </style>
 <body>
     <div class="Wapper">
@@ -440,7 +500,29 @@
                         </div>
                         <h4 id="title_h4">4</h4>
                     </div>
-                    
+                    <div id="title_right">
+                        <div> <h4 id="right_h4">+ ADD</h4></div>
+                        <div style="margin: -20px 0 0 78px;">
+                            <img src="/Image/mic1.png" alt="">
+                            <img src="/Image/cam_small.png" alt="">
+                            <img src="/Image/bachamsmall.png" alt="" style="width: 15px;">
+                        </div>
+                        <div style="margin: -20px 0 0 78px;">
+                            <img src="/Image/mic1.png" alt="">
+                            <img src="/Image/cam_small.png" alt="">
+                            <img src="/Image/bachamsmall.png" alt="" style="width: 15px;">
+                        </div>
+                        <div style="margin: -20px 0 0 78px;">
+                            <img src="/Image/mic1.png" alt="">
+                            <img src="/Image/cam_small.png" alt="">
+                            <img src="/Image/bachamsmall.png" alt="" style="width: 15px;">
+                        </div>
+                        <div style="margin: -20px 0 0 78px;">
+                            <img src="/Image/mic1.png" alt="">
+                            <img src="/Image/cam_small.png" alt="">
+                            <img src="/Image/bachamsmall.png" alt="" style="width: 15px;">
+                        </div>
+                    </div>
                 </div>
             </div>
             <div id="chat">
@@ -459,8 +541,49 @@
                     </div>
                 </div>
                
-                
-                
+                <div id="chat_user">
+                    <div id="chat_user1">
+                        <div id="avatar_user_image"><img src="/Image/avatar 1325.png" alt=""></div>
+                    </div>
+                    <div id="chat_user2">
+                        <div id="chat_user2s"> 
+                            <div id="avatar_user_name">Jordan Nieves</div>
+                            <div id="time_text"> <p style="color:#abafb7;">1:12</p></div>
+                        </div>
+                        <div id="content_text2"><p>Elusmod laborum culpa est manga cillum sint in elit poroident magna anim consecte
+                        </p></div>
+                    </div>
+                </div>
+                <div id="chat_user">
+                    <div id="chat_user1">
+                        <div id="avatar_user_image"><img src="/Image/avatar 1322.png" alt=""></div>
+                    </div>
+                    <div id="chat_user2">
+                        <div id="chat_user2s"> 
+                            <div id="avatar_user_name">Benjamin Crawford</div>
+                            <div id="time_text"> <p style="color:#abafb7;">1:12</p></div>
+                        </div>
+                        <div id="content_text3"><img src="/Image/Icon.png" alt=""style="width: 100px"></div>
+                    </div>
+                </div>
+                <div id="chat_user">
+                    <div id="chat_user1">
+                        <div id="avatar_user_image"><img src="/Image/avatar 1323.png" alt=""></div>
+                    </div>
+                    <div id="chat_user2">
+                        <div id="chat_user2s"> 
+                            <div id="avatar_user_name">Christian Scott</div>
+                            <div id="time_text"> <p style="color:#abafb7;">1:12</p></div>
+                        </div>
+                        <div id="content_text4">
+                            <div id="content_text4_detail">
+                                <div style="line-height: 45px; margin-left: 10px;">Typing...</div>
+                                <div><img src="/Image/smile.png" alt="" style="margin-left: 180px;margin-top: 10px;width: 25px;"></div>
+
+                            </div>
+                            <div><img src="/Image/send1.png" alt="" style="width: 25px;margin: 10px 0 0 20px;"></div>
+                        </div>
+                </div>
             </div>
         </div>
 </body>
