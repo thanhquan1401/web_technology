@@ -1,0 +1,406 @@
+.Wapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-right: 1px solid rgb(211, 211, 211);
+    width: 85px;
+    height: 900px;
+    align-items: center;
+}
+
+.tool {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex-grow: 1;
+    width: 600px;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.user {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#itemtool {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 60px;
+    height: 60px;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.metting {
+    display: flex;
+    flex-direction: column;
+    width: 910px;
+    height: 900px;
+    align-items: center;
+    margin-top: 32px;
+}
+
+.metting_title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 115px;
+    width: 910px;
+    margin-top: 5px;
+}
+
+#content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 75px;
+    width: 910px;
+    gap: 10px;
+}
+
+#clender {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 30px;
+    width: 110px;
+    gap: 10px;
+}
+
+#time_line {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 30px;
+    width: 130px;
+    gap: 10px;
+}
+
+#internal {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 31px;
+    border-radius: 20px;
+    color: white;
+    background-color: rgb(252, 134, 134);
+    height: 30px;
+    width: 90px;
+    gap: 5px;
+}
+
+#time {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    height: 40px;
+    width: 910px;
+    align-items: center;
+    gap: 570px;
+}
+
+#time h1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+    margin-left: 30px;
+}
+
+#time p {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+    color: red;
+    border: 1px solid red;
+    border-radius: 20px;
+    height: 40px;
+    width: 90px;
+}
+
+.metting_main {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    height: 458px;
+    width: 830px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    gap: 600px;
+    margin-top: 20px;
+}
+
+.metting_main p {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: white;
+    border-radius: 5px;
+    background-color: rgb(102, 103, 106, 255);
+    opacity: 70%;
+    width: 160px;
+    height: 40px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.meeting_main img {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 5px;
+    height: 40px;
+    width: 40px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.metting_cam {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.cam {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+    border-radius: 10px;
+}
+
+#cam_item {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 30px;
+    border-radius: 10px;
+    height: 160px;
+    width: 261px;
+}
+
+#cam_item p {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: white;
+    border-radius: 5px;
+    background-color: rgb(102, 103, 106, 255);
+    opacity: 70%;
+    width: 120px;
+    height: 30px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+#cam_item_mic {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    border-radius: 10px;
+    background-color: rgb(102, 103, 106, 255);
+    border-radius: 2px;
+    opacity: 70%;
+    width: 30px;
+    height: 30px;
+    margin-top: 15px;
+    margin-left: 55px;
+}
+
+.online {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgb(0, 255, 0);
+    margin: 0 5px;
+}
+
+.dot_red {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: red;
+    margin: 0 5px;
+}
+
+.cam_tool {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px;
+    gap: 20px;
+    height: 44px;
+    width: 44px;
+}
+
+.cam_tool button {
+    background-color: red;
+    color: white;
+    font-size: 17px;
+    border: 0px;
+    border-radius: 5px;
+    height: 44px;
+    width: 125px;
+    align-items: center;
+}
+
+.part {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-left: 1px solid rgb(211, 211, 211);
+    width: 450px;
+    height: 900px;
+    align-items: center;
+}
+
+#participants {
+    width: 420px;
+    height: 330px;
+    display: flex;
+}
+
+#participants_title {
+    display: flex;
+    justify-content: row;
+}
+
+#title_left {
+    width: 260px;
+    height: 330px;
+    display: flex;
+    flex-direction: row;
+}
+
+#title_h1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 10px;
+}
+
+#title_h1_detail {
+    margin: 25px 0 0 0;
+}
+
+#title_h4 {
+    background-color: #fdf1f4;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    margin: 45px 0 0 10px;
+    border-radius: 50%;
+    color: #e76685;
+}
+
+#title_right {
+    width: 150px;
+    height: 330px;
+    display: flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#right_h4 {
+    width: 70px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    margin: 15px 0 0 70px;
+    border: 1px solid #ee97ab;
+    color: #ea7691;
+    border-radius: 6%;
+}
+
+#chat {
+    width: 420px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid #f1f2f4;
+}
+
+#chat_h1 {
+    height: 100px;
+    margin: 0 0 -40px 10px;
+}
+
+#chat_user {
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    margin: 0 0 0 10px;
+}
+
+#chat_user2 {
+    display: flex;
+    flex-direction: column;
+}
+
+#chat_user2s {
+    display: flex;
+    flex-direction: row;
+    margin-left: 10px;
+}
+
+#avatar_user_name {
+    margin: 8px 0 0 10px;
+}
+
+#time_text {
+    margin: -9px 0 0 9px;
+}
+
+#content_text2 {
+    background-color: #f7f9fa;
+    margin-left: 20px;
+}
+
+#chat_user1 {
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    margin: 0 0 0 10px;
+}
+
+#content_text3 {
+    margin-left: 20px;
+}
+
+#content_text4 {
+    background-color: #f8f9fa;
+    width: 280px;
+    height: 45px;
+    margin-left: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+#content_text4_detail {
+    display: flex;
+    flex-direction: row;
+}

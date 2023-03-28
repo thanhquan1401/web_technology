@@ -1,18 +1,249 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-<style>
-img {
-  float: left;
-  margin-right: 10px;
-}
-</style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/Style.css">
+    <title>Document</title>
 </head>
+<style>
+    body {
+        margin: 0 0 0 0;
+    }
+    
+    #flex-container {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #top-container {
+        height: 70px;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    #top-left {
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    #logo {
+        margin: 25px 0 0 25px;
+    }
+    
+    .menu {
+        margin: 1em 0 0 1.5em;
+    }
+    
+    .menu h3 {
+        color: #565e6c;
+    }
+    
+    .menu :hover {
+        color: #00bdd6;
+    }
+    
+    #top-right {
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    #Search1 {
+        margin: 25px 0 0 210px;
+        width: 335px;
+        height: 35px;
+        border: 0px;
+        border-radius: 5px;
+        background: #f3f4f6;
+    }
+    
+    .top-image {
+        margin: 25px 15px 0 15px;
+    }
+    
+    #center-container {
+        border-top: 1px solid #f3f3f4;
+    }
+    
+    #title-small {
+        display: flex;
+        flex-direction: row;
+        margin: 25px 0 0 155px;
+    }
+    
+    #title-big {
+        margin: -40px 0 0 155px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #title_h1 {
+        margin-bottom: -13px;
+    }
+    
+    #title_rating {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    #title_rating_h3 {
+        margin: -20px 0 0 5px;
+    }
+    
+    #title_rating_left {
+        display: flex;
+        flex-direction: row;
+        width: 50%;
+    }
+    
+    #title_rating_right {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    #title_rating_right_share {
+        margin: 0 0 0 260px;
+    }
+    
+    #title_rating_right_save {
+        margin: 2px 0 0 50px;
+    }
+    
+    #center-banner-grid {
+        display: grid;
+        grid-template-columns: 585px auto auto;
+        width: 1185px;
+        height: 435px;
+        margin-left: 153px;
+        column-gap: 15px;
+    }
+    
+    #banner2 {
+        display: grid;
+        grid-template-rows: auto auto;
+        row-gap: 15px;
+    }
+    
+    #banner3 {
+        display: grid;
+        grid-template-rows: auto auto;
+        row-gap: 15px;
+    }
+    
+    #bottom-container {
+        background-color: brown;
+    }
+</style>
+
 <body>
+    <div id="flex-container">
+        <div id="top-container">
+            <div id="top-left">
+                <div id="logo">
+                    <img src=" Image/logo.png" alt="">
+                </div>
+                <div class="menu">
+                    <h3>Home</h3>
+                </div>
+                <div class="menu">
+                    <h3>Promotions</h3>
+                </div>
+                <div class="menu">
+                    <h3>Best-sellers</h3>
+                </div>
+                <div class="menu">
+                    <h3>New releases</h3>
+                </div>
+                <div class="menu">
+                    <h3>Support</h3>
+                </div>
 
-<h2>Image with Text</h2>
+            </div>
+            <div id="top-right">
+                <div id="search">
+                    <input type="text" name="Search" id="Search1" placeholder="     Search...">
+                </div>
+                <div class="top-image">
+                    <img src="Image/Bell 1.png" alt="">
+                </div>
+                <div class="top-image">
+                    <img src="Image/Shopping cart simple 1.png" alt="">
+                </div>
+                <div class="top-image">
+                    <img src="Image/Avatar 758.png" alt="">
+                </div>
+            </div>
 
-<p><img src="Image/a_detail.png" alt="Girl" style="width:170px;height:170px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede. Praesent blandit odio eu enim. Pellentesque sed dui ut augue blandit sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam nibh. Mauris ac mauris sed pede pellentesque fermentum. Maecenas adipiscing ante non diam sodales hendrerit.</p>
+        </div>
+        <div id="center-container">
+            <div id="title-small">
+                <div>
+                    <h3 style="color: #565e6c;">Home/</h3>
+                </div>
+                <div>
+                    <h3 style="color: #565e6c;">Category/</h3>
+                </div>
+                <div>
+                    <h3 style="margin-left: 10px;color: #171a1f;"> Productitle</h3>
+                </div>
+            </div>
+            <div id="title-big">
+                <div id="title_h1">
+                    <h1 style="font-size: 50px;">Productitle</h1>
+                </div>
+                <div id="title_rating">
+                    <div id="title_rating_left">
+                        <div> <img src="Image/Rating 317.png" alt="" style="height: 20px;"></div>
+                        <div id="title_rating_h3">
+                            <h3>4.20</h3>
+                        </div>
+                        <div>
+                            <h3 style="color: #565e6c; margin: -2px 0 0 5px;">(99 reviews)</h3>
+                        </div>
+                    </div>
+                    <div id="title_rating_right">
+                        <div id="title_rating_right_share">
+                            <img src="Image/share.png" alt="">
+                        </div>
+                        <div id="title_rating_right_save">
+                            <img src="Image/save.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="center-banner-grid">
+                <div id="banner1">
+                    <img src="Image/Image 1705.png" alt="">
+                </div>
+                <div id="banner2">
+                    <div id="image2.1">
+                        <img src="Image/Image 1708.png" alt="">
+                    </div>
+                    <div id="image2.2">
+                        <img src="Image/Image 1706.png" alt="">
+                    </div>
+                </div>
+                <div id="banner3">
+                    <div id="image3.1">
+                        <img src="Image/Image 1707.png" alt="">
+                    </div>
+                    <div id="image3.2">
+                        <img src="Image/Image 1709.png" alt="">
+                    </div>
+                </div>
 
+            </div>
+            <div id="">a</div>
+            <div id="">b</div>
+            <div id="">c</div>
+        </div>
+        <div id="bottom-container">3</div>
+
+    </div>
 </body>
+
 </html>
