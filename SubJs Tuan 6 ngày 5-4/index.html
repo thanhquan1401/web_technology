@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Đồng hồ đếm thời gian</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        
+        .clock {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background-color: #eee;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .display {
+            font-size: 3rem;
+            font-weight: bold;
+            text-align: center;
+        }
+        
+        .hours,
+        .minutes,
+        .seconds,
+        .milliseconds {
+            display: inline-block;
+            margin: 0 0.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="clock">
+        <div class="display">
+            <span class="hours">00</span>:
+            <span class="minutes">00</span>:
+            <span class="seconds">00</span>.
+            <span class="milliseconds">000</span>
+        </div>
+    </div>
+    <div>
+        <button class="start">Bắt đầu</button>
+        <button class="stop">Dừng</button>
+        <button class="reset">Đặt lại</button>
+    </div>
+    <script>
+        //------------------ cập nhật thời gian -------------------------------
+        const display = document.querySelector('.display');
+        const hours = document.querySelector('.hours');
+        const minutes = document.querySelector('.minutes');
+        const seconds = document.querySelector('.seconds');
+        const milliseconds = document.querySelector('.milliseconds');
+        const startBtn = document.querySelector('.start');
+        const stopBtn = document.querySelector('.stop');
+        const resetBtn = document.querySelector('.reset');
+        //--------------Khai báo biến---------------------------------------
+        let intervalId; //lưu trữ ID của hàm 
+        let startTime; //lưu trữ thời bắt đầu đếm
+        let elapsedTime = 0; // lưu trữ thời gian trôi qua
+        let isRunning = false; //theo dỗi trạng thái
+        //------tính toán thời gian trên đồng hồ và cập nhật các phần tử hiển thị giờ, phút, giây và phần mili giây trên đồng hồ. 
+        function updateTime() { // tính thời gian đồng hồ cập nhật
+            const currentTime = Date.now();
+            elapsedTime = currentTime - startTime;
+            const h = Math.floor(elapsedTime / 3600000);
+            const m = Math.floor((elapsedTime % 3600000) / 60000);
+            const s = Math.floor((elapsedTime % 60000) / 1000);
+            const ms = elapsedTime % 1000;
+            hours.textContent = h < 10 ? '0' + h : h;
+            minutes.textContent = m < 10 ? '0' + m : m;
+            seconds.textContent = s < 10 ? '0' + s : s;
+            milliseconds.textContent = ms < 10 ? '00' + ms : ms < 100 ? '0' + ms : ms;
+        }
+        //--------- bắt đầu tính thời gian
+        function startTimer() {
+            if (!isRunning) {
+                isRunning = true;
+                startTime = Date.now() - elapsedTime;
+                intervalId = setInterval(updateTime, 10);
+            }
+        }
+        // -------- ngừng thời gian
+        function stopTimer() {
+            if (isRunning) {
+                isRunning = false;
+                clearInterval(intervalId);
+            }
+        }
+        //-------- đặt lại đồng hồ
+        function resetTimer() {
+            stopTimer();
+            hours.textContent = '00';
+            minutes.textContent = '00';
+            seconds.textContent = '00';
+            milliseconds.textContent = '000';
+            elapsedTime = 0;
+        }
+
+        startBtn.addEventListener('click', startTimer);
+        stopBtn.addEventListener('click', stopTimer);
+        resetBtn.addEventListener('click', resetTimer);
+    </script>
+</body>
+
+</html>
