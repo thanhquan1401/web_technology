@@ -1,0 +1,11 @@
+* {
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.container {
+    width: 900px;
+    /* border: 1px solid black; */
+    /* box-shadow: 5px 5px 5px 5px #AAA; */
+    margin: 20px;
+}
