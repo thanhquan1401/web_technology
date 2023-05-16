@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+
+    <script src="../JS/jquery-3.6.4.min.js"></script>
+    <script src="../JS/bootstrap.min.js"></script>
+    <title>Ôn tập cuối kì</title>
+</head>
+
+<body>
+    <div class="container-">
+        <div class="row">
+            <div class="col-12" style="position: relative;">
+                <img class="col-12" src="/IMAGES/Trangchu.jpg" alt="" style="height: 150px; padding: 0;">
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <nav class="navbar navbar-expand">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a href="#" class="nav-link">Trang chủ</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link" data-target="#frmdl" data-toggle="modal">Đặt lịch</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <table class="table" id="tblsp">
+                    <tr>
+                        <th>STT</th>
+                        <th>Mã bệnh nhân</th>
+                        <th>Mật khẩu</th>
+                        <th>Ngày khám</th>
+                        <th>Phụ thu dịch vụ</th>
+                        <th>Chuyên khoa</th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 bg-info text-center text-danger font-weight-bold" style="height: 80px;">
+                Nguyen Van Thanh Quan
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal" id="frmdl">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Đặt lịch khám Online</h2>
+                    <button class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="row form-group">
+                            <div class="col-12">
+                                <label for="" class="font-weight-bold">Mã bệnh nhân</label>
+                                <input type="text" name="" id="txtma" class="form-control" placeholder="Ma benh nhan" onblur="checkMa()">
+                                <span id="error_ma" style="color: red;">(*)</span>
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <div class="col-12">
+                                <label for="" class="font-weight-bold">Mật khẩu</label>
+                                <input type="password" name="" id="txtpass" class="form-control" placeholder="Mat khau" onblur="checkMK()">
+                                <span id="error_pass" style="color: red;">(*)</span>
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <div class="col-12">
+                                <label for="" class="font-weight-bold">Ngày khám</label>
+                                <input type="date" name="" id="txtngay" class="form-control" placeholder="dd/mm/yyyy" onblur="checkNgay()">
+                                <span id="error_ngay" style="color: red;">(*)</span>
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <div class="col-12">
+                                <label for="" class="font-weight-bold">Loại dịch vụ</label>
+                                <div class="col-12">
+                                    <input type="checkbox" name="loai" id="" class="form-check-inline">Khám bệnh theo yêu cầu
+                                    <input type="checkbox" name="loai" id="" class="form-check-inline">Điều trị ngoại trú
+                                    <input type="checkbox" name="loai" id="" class="form-check-inline">Bác sĩ theo yêu cầu
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <div class="col-12">
+                                <label for="" class="font-weight-bold">Chuyên khoa</label>
+                                <div class="col-12">
+                                    <select name="" id="lstCK" class="form-control">
+                                        <option value="">Ngoại tổng quát</option>
+                                        <option value="">Nhi</option>
+                                        <option value="">Nội tổng quát</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <div class="col-12">
+                                <button class="btn btn-info" id="btn_datlich" type="button" onclick="datlich()">Đặt lịch</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-info" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/JS/dieukien_1.js"></script>
+</body>
+
+</html>
